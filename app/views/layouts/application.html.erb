@@ -13,6 +13,7 @@
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <p class="navbar-brand"><%= link_to 'Blocmetrics', root_path %></p>
+        <span class="navbar-text"><%= link_to 'Registered Applications', registered_applications_path %></span>
         <span class="navbar-text navbar-right">
           <% if user_signed_in? %>
             Signed in as: <strong><%= current_user.email %></strong> |

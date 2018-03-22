@@ -1,0 +1,9 @@
+<h1>
+  <%= @app.name %>
+  <small class="text-muted">
+    <%= "Created #{time_ago_in_words(@app.created_at)} ago by #{@app.user.email}" %>
+  </small>
+  <%= link_to 'Remove', registered_application_path(@app), method: :delete, class: 'btn btn-danger', data: {confirm: 'Are you sure you want to remove this Application?'} %>
+  <br/>
+  <%= @app.url %>
+</h1>
