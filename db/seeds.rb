@@ -22,4 +22,15 @@ end
 
 apps = RegisteredApplication.all
 
-p "#{apps.count} applications registered"
+p "#{apps.count} applications registered."
+
+50.times do
+  Event.create!(
+    name: Faker::Color.color_name,
+    registered_application: apps.sample
+  )
+end
+
+events = Event.all
+
+p "#{events.count} events created."

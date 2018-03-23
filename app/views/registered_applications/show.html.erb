@@ -7,3 +7,11 @@
   <br/>
   <%= @app.url %>
 </h1>
+
+<div class="container">
+  <h3>Events</h3>
+  <% @events.each do |e| %>
+    <%= "#{e.first} - #{e[1].count}" %>
+    <br/>
+  <% end %>
+</div>

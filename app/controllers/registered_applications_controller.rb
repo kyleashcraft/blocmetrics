@@ -2,6 +2,7 @@ class RegisteredApplicationsController < ApplicationController
   def show
     @app = RegisteredApplication.find(params[:id])
     authorize(current_user, @app)
+    @events = @app.events.group_by(&:name)
   end
 
   def index
