@@ -9,7 +9,7 @@ end
 
 users = User.all
 
-p "#{users.count} users created."
+puts "#{users.count} users created."
 
 10.times do
   name = Faker::App.unique.name
@@ -22,15 +22,16 @@ end
 
 apps = RegisteredApplication.all
 
-p "#{apps.count} applications registered."
+puts "#{apps.count} applications registered."
 
-50.times do
+200.times do
   Event.create!(
     name: Faker::Color.color_name,
-    registered_application: apps.sample
+    registered_application: apps.sample,
+    created_at: Faker::Date.backward(30)
   )
 end
 
 events = Event.all
 
-p "#{events.count} events created."
+puts "#{events.count} events created."

@@ -8,12 +8,10 @@
   <%= @app.url %>
 </h1>
 
-<%= pie_chart({"Football" => 10, "Basketball" => 5}) %>
-
-<!-- <div class="container">
+<div class="container">
    <%= pie_chart @app.events.group(:name).count %>
 </div>
 
 <div class="container">
   <%= line_chart @app.events.group_by_day(:created_at).count %>
-</div> -->
+</div>
