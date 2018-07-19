@@ -1,5 +1,9 @@
 {
   "name": "blocmetrics",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "chartkick": "^2.3.6",
+    "jquery": "^3.3.1"
+  }
 }

@@ -1,24 +1,5 @@
-# README
+# Blocmetrics
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple 'analytics' app built to practice Cross Site Requests as well as JS graphs.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Users are able to include a website for which they would like to monitor events.
